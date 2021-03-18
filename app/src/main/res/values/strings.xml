@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">iPlant</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">iPlant</string>
+    <string name="nav_header_subtitle">"@pam"</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">200247035152230</string>
+    <string name="fb_login_protocol_scheme">fb200247035152230</string>
+    <string name="menu_home">Mis Plantas</string>
+    <string name="menu_gallery">Explorar</string>
+    <string name="menu_slideshow">Creditos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tu_planta_perfecta">Tu Planta Perfecta</string>
+    <string name="cu_les_son_tus_preferencias">¿Cuáles son tus preferencias?</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.iPlantApp.iplant.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_detailsFavs"
+            app:destination="@id/detailsFavs"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.iPlantApp.iplant.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_plantDetails"
+            app:destination="@id/plantDetails"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.iPlantApp.iplant.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/plantDetails"
+        android:name="com.iPlantApp.iplant.ui.PlantDetails"
+        android:label="Detalles"
+        tools:layout="@layout/fragment_plant_details">
+        <action
+            android:id="@+id/action_plantDetails_to_dialog"
+            app:destination="@id/dialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/dialog"
+        android:name="com.iPlantApp.iplant.ui.dialog"
+        android:label="Detalles"
+        tools:layout="@layout/fragment_dialog">
+        <action
+            android:id="@+id/action_dialog_to_plantDetails"
+            app:destination="@id/plantDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFavs"
+        android:name="com.iPlantApp.iplant.ui.detailsFavs"
+        android:label="Detalles" >
+        <action
+            android:id="@+id/action_detailsFavs_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/plant_pp"
+        android:name="com.iPlantApp.iplant.ui.plant_p.plant_pp"
+        android:label="@string/tu_planta_perfecta"
+        tools:layout="@layout/plant_pp_fragment" >
+        <action
+            android:id="@+id/action_plant_pp_self"
+            app:destination="@id/plant_pp" />
+        <action
+            android:id="@+id/action_plant_pp_to_sugerencias"
+            app:destination="@id/sugerencias"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/sugerencias"
+        android:name="com.iPlantApp.iplant.ui.sugerencia.sugerencias"
+        android:label="Tus Resultados"
+        tools:layout="@layout/fragment_sugerencias">
+        <action
+            android:id="@+id/action_sugerencias_to_plantDetails"
+            app:destination="@id/plantDetails"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+</navigation>

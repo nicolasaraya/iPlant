@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.PlantDetails">
+
+    <ImageView
+        android:id="@+id/img_plant"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/bbbd0f280cf9cf5219205a69b8f01145" />
+
+
+    <TextView
+        android:id="@+id/nombre_planta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:text="Girasol" />
+
+    <TextView
+        android:id="@+id/desc_plant"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/descripcionplant"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:baselineAlignBottom="false"
+        android:src="@drawable/ic_baseline_save_24"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</LinearLayout>
